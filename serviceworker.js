@@ -2,7 +2,7 @@ let flag=0;
 function messages(){
 
   let time =new Date().getHours();
-  if(time === 11 && flag === 0){
+  if( flag === 0){
 
     postMessage("Please Punch in !  ");
     flag =1;
@@ -13,7 +13,7 @@ function messages(){
   }
 
       setTimeout("messages()",3000);
-      
+
 }
 
 messages();
